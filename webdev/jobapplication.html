@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="job.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="form-title">JOB APPLICATION FORM</h1><br>
+    <br><br><br><br><br>
+    <form action="/action_page.php" class="job-form">
+ <fieldset>
+  <legend>Personal info:</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" required><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" required><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+  <label for="Phone">Contact no:</label>
+  <input type="tel" id="Phone" name="Phone" required>
+ </fieldset>
+<br><br>
+<fieldset>
+        <legend>Job Details</legend>
+        <label for="Pos_applied">Choose a role:-</label>
+        <select id="job" name="job">
+            <option value="sde">Software_Developer</option>
+            <option value="web_dev">Web Developer</option>
+            <option value="AI">AI Engineer</option>
+            <option value="Data science">Data Science</option><br>
+        </select><br><br>
+        <label for="exp">Years of Experience:-</label>
+        <input type="number" min="5" max="15" id="exp" name="exp">
+    </fieldset>
+<br><br>
+    <fieldset>
+        <legend>Availability</legend>
+        <label for="start">Joining Date</label>
+        <input type="date" id="start" name="start"><br><br>
+        <div class="radio-group">
+        <label>Are you willing to relocate?</label><br>
+        <label for="relocate-yes">Yes</label>
+        <input type="radio" id="relocate-yes" name="relocate" value="yes">
+        <label for="relocate-no">No</label>
+        <input type="radio" id="relocate-no" name="relocate" value="no">
+      </div>
+    </fieldset>
+     <button type="submit" class="submit-btn">Submit Application</button>
+</form>
+
+
+</body>
+</html>
